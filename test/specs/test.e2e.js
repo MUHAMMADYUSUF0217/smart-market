@@ -1,7 +1,7 @@
 import { LoginPage } from '../pageobjects/login.page.js';
-import { CatalogPage } from '../pageobjects/login.page.js';
-import { ProductPage } from '../pageobjects/login.page.js';
-import { CheckoutPage } from '../pageobjects/login.page.js';
+import { CatalogPage } from '../pageobjects/page.js';
+import { ProductPage } from '../pageobjects/page.js';
+import { CheckoutPage } from '../pageobjects/page.js';
 
 describe('Login Test for smart-market.uz', () => {
     it('should allow access with correct credentials', async () => {
@@ -17,4 +17,3 @@ describe('Login Test for smart-market.uz', () => {
         await checkoutPage.completePurchase();
     });
 });
-
